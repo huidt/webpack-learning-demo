@@ -1,0 +1,9 @@
+
+@font-face {
+  font-family: 'DancingScript-VariableFont_wght';
+  src: url('./DancingScript-VariableFont_wght.TTF');
+}
+.react-demo {
+  border: 1px red solid;
+  font-family:'DancingScript-VariableFont_wght' ;
+}

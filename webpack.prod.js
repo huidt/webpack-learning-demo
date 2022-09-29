@@ -25,8 +25,8 @@ module.exports = {
     rules: [
       { test: /\.txt$/, use: 'raw-loader' },
       { test: /\.js$/, use: 'babel-loader' },
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-      { test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader'] },
+      { test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader'] },
+      { test: /\.less$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader'] },
       {
         test: /\.(png|jpg|svg|gif|jpeg)$/,
         use: [
